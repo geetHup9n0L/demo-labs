@@ -67,7 +67,9 @@ Từ các **gói 51-55**, là thông tin dữ liệu của ứng dụng được
 
 ____
 
-(Nguồn tham khảo: 
-https://www.youtube.com/watch?v=aYp29r_uOcI,
-https://viblo.asia/p/tong-quan-ve-tls-13-nhanh-hon-va-bao-mat-hon-jvEla3LDKkw)
+Nguồn tham khảo: 
+
+* Wireshark: https://www.youtube.com/watch?v=aYp29r_uOcI,
+
+* Lý thuyết: https://viblo.asia/p/tong-quan-ve-tls-13-nhanh-hon-va-bao-mat-hon-jvEla3LDKkw
 
