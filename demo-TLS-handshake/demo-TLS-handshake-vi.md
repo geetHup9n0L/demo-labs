@@ -32,11 +32,15 @@ IPv4: 20.205.243.166
 ### 3. Kiểm tra các gói mạng chứa quá trình bắt tay TLS giữa client-server:
 Chọn lọc ra các gói mạng liên quan đến thực hiện bắt tay giữa 2 bên, ở mục filter điền: tcp
 
+[ẢNH]
+
 Quá trình bắt tay được thực hiện ở các gói với ID: No. 20, 34-56
 
 **Phân tích:**
 
 Quá trình bắt tay 3 bước của TCP: 
+
+[ẢNH]
 
 Trước khi quá trình TLS bắt đầu, máy chủ phải thực hiện kết nối đáng tin cậy đến server của Github. Thể hiện qua các gói: 20, 34, 35
 
@@ -46,24 +50,33 @@ Trước khi quá trình TLS bắt đầu, máy chủ phải thực hiện kết
 
 Quá trình bắt tay của TLS
 
+[ẢNH]
+
 Khi kết nối TCP được mở, quá trình bắt tay xác thực bắt đầu. Ở đây, quá trình sử dụng phiên bản TLSv1.3 (chỉ có 3 quy trình chính):
 
 * **Gói 36**: Máy chủ gửi Client Hello đến server, cùng với list các Cipher Suites hỗ trợ.
 (thông tin nằm ở Info, có cả SNI=github.com - định danh tên server với Server Name Indication)
+
+[ẢNH]
 			
 * **Gói 48**: Github phản hồi với Server Hello
 Trong bản v1.3, gói này cũng bao gồm khóa chia sẻ của Server và gửi luôn cả Change Cipher Spec để chuyển sang giao tiếp có mã hóa.
 
+[ẢNH]
+
 Dữ liệu gửi từ Server gửi về được mã hóa: (Application data)
+
+[ẢNH]
 
 * **Gói 52**: Máy chủ gửi nốt Change Cipher Spec ngược lại để đáp, đồng thời bắt đầu trao đổi dữ liệu đã được mã hóa (Application Data)
 
+[ẢNH]
 
 Mã hóa dữ liệu ứng dụng:
 
 Từ các **gói 51-55**, là thông tin dữ liệu của ứng dụng được mã hóa trong quá trình trao đổi giữa client-server
 
-
+[ẢNH]
 
 ____
 
