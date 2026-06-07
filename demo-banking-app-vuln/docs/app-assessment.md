@@ -6,6 +6,8 @@ Following the guide in Vulnerbility_Test_Guide.md inside `insecurebankdemo` fold
 
 ![img](docs/images/IBdemo-storage1.png)
 
+![heap1](images/IBdemo-storage1.png)
+
 ### 2. Backup enabled:
 
 `python3 -c "import zlib; f=open('backup.ab','rb'); f.seek(24); open('backup.tar','wb').write(zlib.decompress(f.read()))"`
