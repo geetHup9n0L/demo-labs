@@ -1,7 +1,6 @@
 ### Main: 
 
 **Android Studio**: 
-
 https://developer.android.com/studio?hl=vi
 
 **adb**:
