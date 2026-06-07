@@ -4,6 +4,7 @@ Following the guide in Vulnerbility_Test_Guide.md inside `insecurebankdemo` fold
 
 ### 1. Local Storage:
 
+[img](app/IBstorage1.png)
 
 ### 2. Backup enabled:
 
