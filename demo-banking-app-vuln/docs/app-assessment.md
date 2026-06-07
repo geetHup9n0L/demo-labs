@@ -6,7 +6,7 @@ Following the guide in Vulnerbility_Test_Guide.md inside `insecurebankdemo` fold
 
 ![img](docs/images/IBdemo-storage1.png)
 
-![heap1](images/IBdemo-storage1.png)
+![img](images/IBdemo-storage1.png)
 
 ### 2. Backup enabled:
 
