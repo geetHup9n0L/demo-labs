@@ -40,4 +40,7 @@ reverse engineer the apk file with jadx:
 
 ### 4. IPC/Exported:
 
+![img](images/IBdemo-ipc1.png)
+
+![img](images/IBdemo-ipc2.png)
 
