@@ -24,7 +24,19 @@ SharedPreferences:
 
 ### 3. Crypto:
 
+![img](images/IBdemo-crypto-decrypt1.png)
+
+![img](images/IBdemo-crypto-decrypt2.png)
+
 `Decrypted message: admin:1780818471993`
+
+reverse engineer the apk file with jadx:
+
+![img](images/IBdemo-jadx1.png)
+
+![img](images/IBdemo-crypto-jadx2.png)
+
+![img](images/IBdemo-crypto-jadx.png)
 
 ### 4. IPC/Exported:
 
